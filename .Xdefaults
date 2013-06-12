@@ -2,7 +2,7 @@ URxvt*background: #111
 URxvt*cursorBlink: TRUE
 URxvt*depth: 32
 URxvt*fading: 28
-URxvt*font: xft:Monospace:pixelsize=12
+URxvt*font: xft:Monospace:pixelsize=11
 URxvt*foreground: #ddd
 URxvt*jumpScroll: FALSE
 URxvt*saveLines: 1000
