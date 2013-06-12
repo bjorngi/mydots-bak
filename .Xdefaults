@@ -1,0 +1,17 @@
+URxvt*background: #111
+URxvt*cursorBlink: TRUE
+URxvt*depth: 32
+URxvt*fading: 28
+URxvt*font: xft:Monospace:pixelsize=12
+URxvt*foreground: #ddd
+URxvt*jumpScroll: FALSE
+URxvt*saveLines: 1000
+URxvt*scrollBar: FALSE
+URxvt*scrollTtyOutput: FALSE
+URxvt*scrollWithBuffer: TRUE
+URxvt*secondaryWheel: TRUE
+URxvt*skipBuiltinGlyphs: TRUE
+URxvt*skipScroll: FALSE
+URxvt*urgentOnBell: FALSE
+URxvt*pointerBlank: TRUE
+URxvt*pointerBlankDelay: 1
