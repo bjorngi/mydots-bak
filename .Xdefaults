@@ -15,3 +15,41 @@ URxvt*skipScroll: FALSE
 URxvt*urgentOnBell: FALSE
 URxvt*pointerBlank: TRUE
 URxvt*pointerBlankDelay: 1
+
+! Normal
+! ! color0    black
+! ! color1    red
+! ! color2    green
+! ! color3    yellow
+! ! color4    blue
+! ! color5    purple
+! ! color6    cyan
+! ! color7    white
+!
+! urxvt*color0:    #6c6c6c
+! urxvt*color1:    #983434
+! urxvt*color2:    #19593D
+! urxvt*color3:    #D5C59B
+! urxvt*color4:    #555E6E
+! urxvt*color5:    #5C69A5
+! urxvt*color6:    #54C1E5
+! urxvt*color7:    #D3D3D3
+!
+! ! Light
+! ! color8    black
+! ! color9    red
+! ! color10    green
+! ! color11    yellow
+! ! color12    blue
+! ! color13    purple
+! ! color14    cyan
+! ! color15    white
+!
+! urxvt*color8:    #747474
+! urxvt*color9:    #E04C4C
+! urxvt*color10:   #24771F
+! urxvt*color11:   #3A4CCD
+! urxvt*color12:   #4C70AE
+! urxvt*color13:   #7889D7
+! urxvt*color14:   #5DD7FF
+! urxvt*color15:   #ffffff
