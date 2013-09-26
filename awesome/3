@@ -37,7 +37,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/bjorn/.config/awesome/themes/grey-new/theme.lua")
+beautiful.init("/home/bjorn/.config/awesome/themes/obscur/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
@@ -86,8 +86,6 @@ myawesomemenu = {
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
-
-
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "Debian", debian.menu.Debian_menu.Debian },
@@ -228,9 +226,6 @@ globalkeys = awful.util.table.join(
                 client.focus:raise()
             end
         end),
-
-    -- My shortcuts
-    awful.key({ modkey,           }, "F12", function () awful.util.spawn("xtrlock") end),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
@@ -380,4 +375,3 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-
