@@ -16,16 +16,20 @@ set nocompatible               " be iMproved
 
 
 " My installed plugins with vundle
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'coot/atp_vim'
+Bundle 'vim-scripts/vimwiki'
 
 " ================ CONFIG START =============
 " Set color scheme
 " https://raw.github.com/garybernhardt/dotfiles/master/.vim/colors/grb256.vim
-colorscheme grb256
+colorscheme desert
+
+" Change vimwiki folder
+nmap <Leader>ww :e $HOME/Dropbox/vimwiki/index.wiki<CR>
 
 " Basic settings
 syntax on
