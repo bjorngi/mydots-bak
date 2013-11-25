@@ -47,4 +47,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/idea-IU-129.713/bin:/opt:/opt/android-studio/bin
 
-source ~/.zshrc.local
+source ~/.zshrc-alias
+export=vim

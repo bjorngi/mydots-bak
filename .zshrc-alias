@@ -1,0 +1,3 @@
+alias c="ssh bjorngi@tihlde.org"
+alias stats="ssh bjorngi@stats.tihlde.org"
+alias t="todo.sh"

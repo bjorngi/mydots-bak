@@ -146,4 +146,5 @@ nnoremap <C-H> <C-W><C-H>
 " Jedi-vim config
 let g:jedi#get_definition_command = "<leader>k"
 
-
+" Vimwiki
+ let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
