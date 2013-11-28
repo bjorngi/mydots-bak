@@ -1,4 +1,5 @@
 alias c="ssh bjorngi@tihlde.org"
+alias cm="mosh bjorngi@tihlde.org"
 alias stats="ssh bjorngi@stats.tihlde.org"
 alias t="todo.sh"
 alias ln="ssh bjorn@212.71.234.152"
