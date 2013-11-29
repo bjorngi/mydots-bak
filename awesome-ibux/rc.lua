@@ -10,7 +10,8 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-
+-- Pomdoro
+local awmodoro = require("awmodoro")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -202,6 +203,34 @@ for s = 1, screen.count() do
     mywibox[s]:set_widget(layout)
 end
 -- }}}
+-- {{{ Pomdoro box
+
+pomowibox = awful.wibox({ position = "top", screen = 1, height=4})
+pomowibox.visible = false
+local pomodoro = awmodoro.new({
+    minutes             = 25,
+    do_notify           = true,
+    active_bg_color     = '#313131',
+    paused_bg_color     = '#7746D7',
+    fg_color            = {type = "linear", from = {0,0}, to = {pomowibox.width, 0}, stops = {{0, "#AECF96"},{0.5, "#88A175"},{1, "#FF5656"}}},
+    width               = pomowibox.width,
+    height              = pomowibox.height, 
+
+    begin_callback = function()
+        for s = 1, screen.count() do
+            mywibox[s].visible = false
+        end
+        pomowibox.visible = true
+    end,
+
+    finish_callback = function()
+        for s = 1, screen.count() do
+            mywibox[s].visible = true
+        end
+        pomowibox.visible = false
+    end})
+pomowibox:set_widget(pomodoro)
+
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
@@ -213,6 +242,8 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
+    awful.key({          }, "F12", function () pomodoro:toggle() end),
+    awful.key({ modkey, }, "F12", function () pomodoro:finish() end),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
