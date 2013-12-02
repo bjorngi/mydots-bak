@@ -275,6 +275,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Standard program
+    awful.key({  }, "XF86Launch1", function () awful.util.spawn_with_shell("slimlock") end),
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),

@@ -34,7 +34,7 @@ URxvt*pointerBlankDelay: 1
 ! urxvt*color5:    #5C69A5
 ! urxvt*color6:    #54C1E5
 ! urxvt*color7:    #D3D3D3
-!
+! !
 ! ! Light
 ! ! color8    black
 ! ! color9    red
@@ -45,11 +45,11 @@ URxvt*pointerBlankDelay: 1
 ! ! color14    cyan
 ! ! color15    white
 !
-! urxvt*color8:    #747474
-! urxvt*color9:    #E04C4C
-! urxvt*color10:   #24771F
-! urxvt*color11:   #3A4CCD
-! urxvt*color12:   #4C70AE
-! urxvt*color13:   #7889D7
-! urxvt*color14:   #5DD7FF
-! urxvt*color15:   #ffffff
+! ! urxvt*color8:    #747474
+! ! urxvt*color9:    #E04C4C
+! ! urxvt*color10:   #24771F
+! ! urxvt*color11:   #3A4CCD
+urxvt*color12:   #4C70AE
+! ! urxvt*color13:   #7889D7
+! ! urxvt*color14:   #5DD7FF
+! ! urxvt*color15:   #ffffff
