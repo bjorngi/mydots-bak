@@ -244,8 +244,6 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     awful.key({          }, "F12", function () pomodoro:toggle() end),
     awful.key({ modkey, }, "F12", function () pomodoro:finish() end),
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "j",
@@ -290,6 +288,12 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
+
+    -- Resize floating windows
+    awful.key({ modkey }, "Right",  function () awful.client.moveresize( 0, 0, 20, 0) end),
+    awful.key({ modkey }, "Left",   function () awful.client.moveresize( 0, 0, -20, 0) end),
+    awful.key({ modkey }, "Down",   function () awful.client.moveresize( 0, 0, 0,  20) end),
+    awful.key({ modkey }, "Up",     function () awful.client.moveresize( 0, 0, 0, -20) end),
 
     -- Prompt
     --awful.key({ modkey },            "r",     function () awful.util.spawn("dmenu_run") end),
