@@ -16,6 +16,7 @@ set nocompatible               " be iMproved
 
 
 " My installed plugins with vundle
+Bundle 'vim-ledger'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'

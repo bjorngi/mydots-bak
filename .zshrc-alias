@@ -7,3 +7,8 @@ alias lm="mosh bjorn@212.71.234.152"
 alias less='/usr/share/vim/vim74/macros/less.sh'
 alias copy="rsync -av --progress"
 alias t="todo.sh"
+
+
+
+alias pacman="sudo pacman"
+alias dontquit="youtube-viewer http://www.youtube.com/watch\?v\=WTFnmsCnr6g"
